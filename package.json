@@ -1,0 +1,25 @@
+{
+  "name": "kamu-tidak-sendiri",
+  "version": "1.0.0",
+  "description": "Aplikasi peringatan darurat yang menghubungkan pengguna dengan **tim penyelamat** secara **real-time** dalam situasi darurat. Dirancang untuk mempercepat respon dan meminimalkan dampak dalam keadaan kritis seperti bencana, kecelakaan, atau tindak kejahatan.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezzawanidlomuddin/kamu-tidak-sendiri.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezzawanidlomuddin/kamu-tidak-sendiri/issues"
+  },
+  "homepage": "https://github.com/ezzawanidlomuddin/kamu-tidak-sendiri#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
