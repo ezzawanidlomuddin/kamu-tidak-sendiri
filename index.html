@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamu tidak sendiri</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h3>Kamu Tidak Sendiri</h3>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Layanan</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="greeting" id="greet">Selamat Malam 🌙, Ezzawa</div>
+    <div class="clock" id="clock"></div>
+    <div class="location" id="loc">📍 Mengambil lokasi...</div>
+    <button class="sos" id="sosBtn">SOS</button>
+    <div class="call-action"
+      style="background:linear-gradient(90deg,#ff7e5f,#feb47b);color:#fff;padding:18px 20px 14px 20px;border-radius:12px;margin-bottom:18px;text-align:center;font-size:1.15rem;font-weight:600;box-shadow:0 2px 8px rgba(255,126,95,0.10);letter-spacing:0.5px;">
+      Jika Anda dalam keadaan darurat, <span style="text-decoration:underline;">tekan tombol <b>SOS</b></span> di atas
+      ini untuk segera menghubungi layanan darurat utama.<br>Jangan ragu untuk meminta bantuan kapan saja!
+    </div>
+    <div class="grid">
+      <div class="service" data-number="110">👮 Polisi</div>
+      <div class="service" data-number="118">🚑 Ambulans</div>
+      <div class="service" data-number="113">🚒 Pemadam</div>
+    </div>
+  </div>
+
+  <!-- Modal Konfirmasi SOS -->
+  <div id="modalSOS" class="modal"
+    style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.35);justify-content:center;align-items:center;">
+    <div
+      style="background:#fff;padding:28px 24px 18px 24px;border-radius:14px;max-width:320px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.18);">
+      <h3 style="margin-top:0;color:#ff7e5f;">Konfirmasi Darurat</h3>
+      <p>Apakah Anda yakin ingin memanggil <b id="modalSOSNumber">112</b>?</p>
+      <div style="margin-top:18px;display:flex;gap:12px;justify-content:center;">
+        <button id="modalSOSYes"
+          style="background:#ff4d4f;color:#fff;border:none;padding:8px 18px;border-radius:6px;font-weight:600;cursor:pointer;">Ya</button>
+        <button id="modalSOSNo"
+          style="background:#eee;color:#333;border:none;padding:8px 18px;border-radius:6px;font-weight:600;cursor:pointer;">Batal</button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Izin Lokasi -->
+  <div id="modalLocation" class="modal"
+    style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.35);justify-content:center;align-items:center;">
+    <div
+      style="background:#fff;padding:28px 24px 18px 24px;border-radius:14px;max-width:340px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.18);">
+      <h3 style="margin-top:0;color:#ff7e5f;">Izin Lokasi Diperlukan</h3>
+      <p>Untuk menampilkan lokasi Anda, izinkan akses lokasi pada pengaturan browser.<br><br><b>Cara:</b> Klik ikon
+        gembok di address bar &gt; Site settings &gt; Izinkan lokasi.</p>
+      <button id="modalLocationClose"
+        style="background:#ff7e5f;color:#fff;border:none;padding:8px 18px;border-radius:6px;font-weight:600;cursor:pointer;margin-top:12px;">Tutup</button>
+    </div>
+  </div>
+
+  <section class="about">
+    <h2>Tentang Kami</h2>
+    <p>Kami hadir untuk memberikan bantuan dan layanan darurat kepada masyarakat. Jangan ragu untuk menghubungi kami
+      kapan saja.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimoni</h2>
+    <div class="testimonial">
+      <p>"Layanan ini sangat membantu saya dalam keadaan darurat. Terima kasih!"</p>
+      <span>- Andi</span>
+    </div>
+    <div class="testimonial">
+      <p>"Cepat tanggap dan sangat ramah. Sangat direkomendasikan!"</p>
+      <span>- Siti</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kamu Tidak Sendiri | Ezzawa Nidlomuddin SMKS Mutiara Ilmu Makassar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
